@@ -70,6 +70,14 @@ a:hover{color:var(--bronze-deep);}
 }
 .topbar-nav a:hover{color:var(--blue);}
 .topbar-nav a.is-active{color:var(--blue-deep);font-weight:700;border-bottom:2px solid var(--bronze);}
+/* site-wide entry button to the interactive lesson — appears on every page */
+.topbar-nav a.nav-lesson{
+  background:var(--bronze);color:#fff;
+  border-radius:999px;padding:6px 16px;font-weight:700;
+  border-bottom:0;letter-spacing:.02em;
+  transition:background .2s,transform .12s;
+}
+.topbar-nav a.nav-lesson:hover{background:var(--bronze-deep);color:#fff;transform:translateY(-1px);}
 
 
 /* ============ TITLE ============ */
