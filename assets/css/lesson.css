@@ -233,6 +233,42 @@ h1,h2,h3,.badge,.word-en,.big{font-family:'Fredoka','PingFang TC',sans-serif;}
 .obs tr:last-child td{border-bottom:0;}
 .obs .blank{color:#c9bfa8;font-style:italic;}
 
+/* ===== Guide card (Lesson 5) ===== */
+.gcard{
+  max-width:500px;margin:26px auto 0;background:#fff;border-radius:22px;
+  box-shadow:var(--shadow);overflow:hidden;border:3px solid var(--sun);
+}
+.gcard .gcard-top{
+  background:linear-gradient(135deg,var(--sky) 0%,var(--grape) 100%);
+  color:#fff;padding:22px 20px;text-align:center;
+}
+.gcard .gcard-top .g-emoji{font-size:50px;line-height:1;}
+.gcard .gcard-top .g-title{font-family:'Fredoka',sans-serif;font-size:27px;font-weight:700;margin-top:8px;}
+.gcard .gcard-top .g-zh{font-family:'PingFang TC',sans-serif;font-size:15px;opacity:.92;margin-top:2px;}
+.gcard .gcard-body{padding:20px 24px 22px;}
+.gcard .g-row{margin:12px 0;font-size:18px;font-weight:700;}
+.gcard .g-row .lbl{
+  display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--bronze-deep);font-family:'Fredoka',sans-serif;margin-bottom:2px;
+}
+.gcard .g-row .blank{color:#c9bfa8;font-style:italic;font-weight:600;}
+.gcard .g-row .zh{display:block;font-family:'PingFang TC',sans-serif;font-size:14.5px;color:var(--ink-soft);font-weight:600;margin-top:2px;}
+
+/* ===== Certificate (Lesson 6) ===== */
+.cert{
+  max-width:660px;margin:28px auto 0;
+  background:linear-gradient(160deg,#FFFDF7 0%,#FFF1C9 100%);
+  border:4px double var(--bronze);border-radius:24px;
+  padding:36px 30px;text-align:center;box-shadow:var(--shadow);
+}
+.cert .seal{font-size:56px;line-height:1;}
+.cert .cert-h{font-family:'Fredoka',sans-serif;font-size:30px;font-weight:700;color:var(--bronze-deep);margin-top:8px;line-height:1.1;}
+.cert .cert-h .zh{display:block;font-family:'PingFang TC',sans-serif;font-size:18px;color:var(--ink);margin-top:6px;}
+.cert .cert-sub{font-size:18px;font-weight:700;margin-top:12px;}
+.cert .cert-sub .zh{display:block;font-family:'PingFang TC',sans-serif;font-size:15px;color:var(--ink-soft);margin-top:3px;}
+.cert .cert-name{margin:20px auto 6px;border-bottom:3px dotted var(--bronze);max-width:340px;height:36px;}
+.cert .cert-cap{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);font-family:'Fredoka',sans-serif;}
+
 /* ===== Goddess card ===== */
 .goddess{
   max-width:760px;margin:26px auto 0;background:#fff;border-radius:var(--radius);
