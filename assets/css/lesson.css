@@ -207,6 +207,32 @@ h1,h2,h3,.badge,.word-en,.big{font-family:'Fredoka','PingFang TC',sans-serif;}
 .qa .speak-btn:hover{background:#5a3fd6;}
 .qa-grid{max-width:760px;margin:28px auto 0;display:grid;gap:14px;}
 
+/* ===== Sentence frame (sentence builder) ===== */
+.frame{
+  max-width:760px;margin:24px auto 0;background:#fff;
+  border:3px dashed var(--sun);border-radius:var(--radius);
+  padding:28px 28px;text-align:center;box-shadow:var(--shadow-sm);
+}
+.frame .pattern{font-size:24px;font-weight:800;color:var(--ink);line-height:1.5;}
+.frame .pattern .slot{
+  display:inline-block;background:var(--butter-bg);border-radius:9px;
+  padding:2px 12px;color:var(--coral-deep);margin:0 2px;
+}
+.frame .eg{font-size:18px;margin-top:16px;color:var(--ink-soft);font-weight:700;}
+.frame .eg .zh{display:block;font-family:'PingFang TC',sans-serif;font-size:15px;margin-top:4px;}
+.frame .speak-btn{margin-top:14px;background:var(--sun);color:#3a2a12;}
+.frame .speak-btn:hover{background:#e6a000;}
+
+/* ===== Observation sheet ===== */
+.obs{max-width:760px;margin:24px auto 0;background:#fff;border-radius:var(--radius);
+  padding:10px 14px;box-shadow:var(--shadow-sm);overflow:hidden;}
+.obs table{width:100%;border-collapse:collapse;}
+.obs th,.obs td{padding:12px 12px;text-align:left;border-bottom:2px solid #f0e7d4;font-size:16px;}
+.obs th{font-family:'Fredoka',sans-serif;font-weight:700;color:var(--sky-deep);font-size:14px;letter-spacing:.04em;}
+.obs td .zh{display:block;font-family:'PingFang TC',sans-serif;font-size:13.5px;color:var(--ink-soft);margin-top:2px;}
+.obs tr:last-child td{border-bottom:0;}
+.obs .blank{color:#c9bfa8;font-style:italic;}
+
 /* ===== Goddess card ===== */
 .goddess{
   max-width:760px;margin:26px auto 0;background:#fff;border-radius:var(--radius);
