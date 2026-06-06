@@ -77,29 +77,27 @@ a:hover{color:var(--bronze-deep);}
 /* uncomment the url() line below and drop the file in /photos.             */
 .title{
   position:relative;
+  /* Clear gate photo with ONLY a bottom scrim for text legibility — no full-frame mask */
   background:
-    /* url("../../photos/hero-school.jpg") center 55%/cover no-repeat, */
-    linear-gradient(135deg,#0e2138 0%,#13283F 45%,#1F3A5F 100%);
-  padding:114px 0 100px;
+    linear-gradient(to top, rgba(11,26,45,.88) 0%, rgba(11,26,45,.55) 26%, rgba(11,26,45,.14) 46%, transparent 62%),
+    url("../../photos/school-gate.jpg") center 44%/cover no-repeat,
+    #13283F;
+  min-height:620px;
+  display:flex;
+  align-items:flex-end;
   text-align:center;
   color:#fff;
   border-bottom:4px solid var(--bronze);
   overflow:hidden;
 }
-.title::after{
-  content:"";position:absolute;
-  inset:0;background:
-    radial-gradient(circle at 80% 18%,rgba(176,125,60,.22),transparent 55%),
-    radial-gradient(circle at 18% 82%,rgba(31,58,95,.30),transparent 55%);
-  pointer-events:none;
-}
-.title > .wrap{position:relative;z-index:1;}
+.title > .wrap{position:relative;z-index:1;width:100%;padding-bottom:52px;}
 .title__eyebrow{
   display:inline-block;
   font-size:13.5px;letter-spacing:.28em;
   color:rgba(241,214,170,.96);font-weight:700;
   text-transform:uppercase;
   margin-bottom:16px;
+  text-shadow:0 1px 10px rgba(0,0,0,.65);
 }
 .title h1{
   font-family:'Playfair Display','PingFang TC',serif;
@@ -107,7 +105,7 @@ a:hover{color:var(--bronze-deep);}
   line-height:1.05;font-weight:600;letter-spacing:.005em;
   color:#fff;
   margin-bottom:6px;
-  text-shadow:0 2px 16px rgba(0,0,0,.45);
+  text-shadow:0 2px 22px rgba(0,0,0,.65), 0 1px 3px rgba(0,0,0,.5);
 }
 .title .h1-zh{
   font-size:clamp(20px,2.6vw,26px);
@@ -115,7 +113,7 @@ a:hover{color:var(--bronze-deep);}
   color:rgba(255,255,255,.9);
   margin-top:12px;
   font-family:'PingFang TC','Apple LiGothic Medium',sans-serif;
-  text-shadow:0 1px 6px rgba(0,0,0,.35);
+  text-shadow:0 1px 12px rgba(0,0,0,.6), 0 1px 3px rgba(0,0,0,.5);
 }
 .title__divider{
   width:60px;height:2px;
@@ -130,6 +128,7 @@ a:hover{color:var(--bronze-deep);}
   font-size:21px;
   color:rgba(255,255,255,.95);
   line-height:1.55;
+  text-shadow:0 1px 12px rgba(0,0,0,.62);
 }
 .title__tagline .tagline-zh{
   display:block;
@@ -1047,7 +1046,8 @@ footer .partner a:hover{border-bottom-color:#f1d6aa;}
 
 /* ============ Mobile ============ */
 @media (max-width: 880px) {
-  .title{padding:64px 0 54px;}
+  .title{min-height:440px;}
+  .title > .wrap{padding-bottom:36px;}
   section{padding:64px 0;}
   .about-grid{grid-template-columns:1fr;gap:36px;}
   .pillars{grid-template-columns:1fr;}
